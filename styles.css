@@ -19,6 +19,10 @@ body {
 	color: #ffffff;
 }
 
+#header h1 {
+	margin: 8px 10px;
+}
+
 #footer {
 	background: #1D371C;
 	border: none;
