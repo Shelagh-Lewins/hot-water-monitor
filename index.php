@@ -10,9 +10,10 @@
 <script src="js_includes/Chart.bundle.min.js"></script>
 
 <script>
-// get the day's temperature data and put it into a JavaScript-style of array
 <?php
-$csv = explode("\n", file_get_contents('results_2017-11-08-00-00-01.csv'));
+// get the day's temperature data and put it into a JavaScript-style of array
+$filename = file_get_contents('log_file_name.txt');
+$csv = explode("\n", file_get_contents($filename));
 
 foreach ($csv as $key => $line)
 {
@@ -23,6 +24,7 @@ $js_array = json_encode($csv);
 ?>
 results = <?php echo $js_array; ?>;
 </script>
+
 </head>
 
 <body>
