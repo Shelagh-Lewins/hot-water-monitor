@@ -1,11 +1,16 @@
 # hot-water-monitor
-Web front end to display data from a set of temperature sensors
+====================
+Web front end to display data from a set of temperature sensors.
 
-The file current.js contains:
+Display Data
+------------
+Three files must be copied into the same directory as index.php to provide display data.
 
-log_file: the filename in which the day's results so far are stored
+current.js contains a JSON object which specifies:
+
 updated: timestamp of the latest update to the data
 live_data: the latest set of individual temperature readings
 
-This file and the day's results file need to be updated by the server.
+log_file_name.txt contains the path to the file containing the day's results file. It must be plain text with no quotation marks. The name of this file includes the timestamp when it was created.
+
 Copyright (C) Greencroft Technical Services Ltd
